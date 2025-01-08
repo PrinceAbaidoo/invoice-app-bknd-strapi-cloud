@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import fs from 'fs';
 import jwt from 'jsonwebtoken';
 const app = express();
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3000;
 
 const isValidEmail = (email) => { 
     return users.some(user => user.email === email)
