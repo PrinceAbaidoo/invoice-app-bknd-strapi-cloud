@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import fs from 'fs';
 import jwt from 'jsonwebtoken';
-import { cors } from 'cors';
+import cors from 'cors';
 // import { users } from './src/users';
 const app = express();
 const PORT = process.env.PORT || 3000;
