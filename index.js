@@ -61,7 +61,12 @@ const generateRandomString = () => {
 
 
 // Middleware
+
+// const corsOptions = { 
+//     origin: '*',
+// }
 app.use(cors());
+app.options('*', cors());
 app.use(bodyParser.json());
 
 // Load initial data from JSON file
